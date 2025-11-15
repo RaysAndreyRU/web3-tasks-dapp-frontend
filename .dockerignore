@@ -1,0 +1,17 @@
+Dockerfile
+.dockerignore
+
+node_modules
+npm-debug.log
+
+README.md
+
+
+.git
+.gitignore
+.env
+.github
+
+# .prettierrc
+# .eslintrc.js
+# components.json

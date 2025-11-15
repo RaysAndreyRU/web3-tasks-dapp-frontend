@@ -1,0 +1,38 @@
+button {
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.dark {
+  --scrollbar-color: 255, 255, 255;
+}
+
+.light {
+  --scrollbar-color: 0, 0, 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--scrollbar-color), 0.15);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--scrollbar-color), 0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--scrollbar-color), 0.15) transparent;
+}
