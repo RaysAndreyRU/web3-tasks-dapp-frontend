@@ -1,7 +1,8 @@
+import type { TaskResponse } from '@src/entities/Task/model/schema.ts'
 
 
 export interface TasksGridProps {
-  tasks: Task[]
+  tasks: TaskResponse[]
   isVerifying?: boolean
   onVerify: (id: number) => void
 }
